@@ -6,6 +6,10 @@
 section {
     padding: 50px 0;
 }
+img {
+    max-width: 100%;
+    min-height: 100%;
+}
 
 /* 
  ======================== Navigation =============================
@@ -50,9 +54,39 @@ section {
     background-color: azure;
 }
 
+/* 
+ ======================== Work =============================
+*/
+.work-text {
+    margin-bottom: 40px;
+}
+.work-item {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    min-height: 200px;
+}
+.academlo-webpage {
+    background-image: url('../img/work.jpeg');
+}
+.google-webpage {
+    background-image: url('https://images.pexels.com/photos/5417844/pexels-photo-5417844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+.facebook-webpage {
+    background-image: url('https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+}
+
+/* 
+ ======================== Footer =============================
+*/
+footer {
+    padding: 40px 0;
+}
+
 /*
 ======================== Components =============================
 */
+/* Button component */
 .primary-button {
     background-color: #0d1568;
     color: white;
@@ -60,6 +94,7 @@ section {
     border: 0;
 }
 
+/* Card component */
 .card {
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
     background-color: white;
@@ -67,8 +102,18 @@ section {
 .card .card-body {
     padding: 20px;
 }
-
-
+/* Tag component */
+.tag {
+    background-color: #e4e4e4;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+}
+.primary-tag {
+    background-color: #0d1568;
+    color: white;
+}
 /*
 ======================== Helpers =============================
 */
@@ -80,4 +125,14 @@ section {
 }
 .space-top {
     margin-top: 20px;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
 }
