@@ -18,20 +18,36 @@ img {
     display: flex;
     justify-content: space-between;
 }
-.nav ul.hide{
+/* .nav ul.hide{
     display: none;
-}
+} */
 #menu {
     top: 40px;
     position: fixed;
+    z-index: 9;
     height: 100vh;
     width: 200px;
     background-color: black;
     color: white;
     right: 0;
+    transition: right 0.2s;
+}
+#menu.hide {
+    right: -200px;
 }
 
-
+@media(min-width: 576px) {
+    #menu {
+        /* left: 0; */
+        width: 100%;
+        height: 50px;
+        top: 0;
+        /* position: relative; */
+    }
+    #menu li {
+        display: inline-block;
+    }
+}
 /* 
  ======================== Banner =============================
 */
@@ -51,7 +67,7 @@ img {
  ======================== Posts =============================
 */
 .posts {
-    background-color: azure;
+    background-color: #EDF7FA;
 }
 
 /* 
@@ -65,6 +81,24 @@ img {
     background-size: cover;
     height: 100%;
     min-height: 200px;
+    position: relative;
+}
+.overlay-info {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s;
+    overflow: hidden;
+}
+.work-item:hover .overlay-info {
+    top: 0;
 }
 .academlo-webpage {
     background-image: url('../img/work.jpeg');
@@ -88,7 +122,7 @@ footer {
 */
 /* Button component */
 .primary-button {
-    background-color: #0d1568;
+    background-color: rgb(33,36,61);
     color: white;
     padding: 8px 15px;
     border: 0;
@@ -111,14 +145,14 @@ footer {
     display: inline-block;
 }
 .primary-tag {
-    background-color: #0d1568;
+    background-color: rgb(33,36,61);
     color: white;
 }
 /*
 ======================== Helpers =============================
 */
 .primary-text {
-    color: #0d1568;
+    color: rgb(33,36,61);
 }
 .center-text {
     text-align: center;
@@ -135,4 +169,18 @@ footer {
 }
 .align-items-center {
     align-items: center;
+}
+
+
+/*  */
+.element-transitionable-to-top {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: top 1s;
+}
+.transition-bottom-to-top {
+    top: 0;
 }
