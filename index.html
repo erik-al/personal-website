@@ -10,8 +10,8 @@
     <script src="./javascript.js"></script>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
             <nav class="nav">
                 <a href="#">Logo</a>
                 <ul id="menu" class="hide">
@@ -20,32 +20,34 @@
                     <li><a href="#">Works</a></li>
                     <li><a href="#">About me</a></li>
                 </ul>
-                <a onclick="showMenu()" href="#">
+                <a onclick="showMenu()" href="#" class="burguer-menu">
                     <i class="fas fa-align-justify"></i>
                 </a>
             </nav>
-        </header>
-    </div>
+        </div>
+    </header>
 
     <!-- Banner -->
-    <div class="primary-text center-text">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="profile-picture"></div>
-                </div>
-                <div class="col-md-8">
-                    <h1 class="space-top">Hi, my name is Erik ...</h1>
-                    <p class="space-top">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore repellendus illo dignissimos quisquam, praesentium fuga recusandae tempore ducimus assumenda repudiandae? Minima eligendi numquam voluptate sunt laborum distinctio nobis obcaecati?
-                    </p>
-                    <button class="primary-button space-top color">
-                        Download CV
-                    </button>
+    <section>
+        <div class="primary-text center-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-picture"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="space-top">Hi, my name is Erik ...</h1>
+                        <p class="space-top">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est inventore repellendus illo dignissimos quisquam, praesentium fuga recusandae tempore ducimus assumenda repudiandae? Minima eligendi numquam voluptate sunt laborum distinctio nobis obcaecati?
+                        </p>
+                        <button class="primary-button space-top color">
+                            Download CV
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Posts -->
     <section class="posts">
